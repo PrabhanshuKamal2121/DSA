@@ -4,7 +4,7 @@
         {
             "label": "compile",
             "type": "shell",
-            "command": "g++",
+            "command": "g++-15",
             "args": [
                 "-std=c++17",
                 "-o",
@@ -19,7 +19,25 @@
         {
             "label": "compile and run",
             "type": "shell",
-            "command": "g++ -std=c++17 -o ${fileBasenameNoExtension} ${file} && ./${fileBasenameNoExtension} < input.txt > output.txt",
+            "command": "g++-15",
+            "args": [
+                "-std=c++17",
+                "-o",
+                "${fileBasenameNoExtension}",
+                "${file}",
+                "&&",
+                "./${fileBasenameNoExtension}",
+                "<",
+                "input.txt",
+                ">",
+                "output.txt"
+            ],
+            "options": {
+                "shell": {
+                    "executable": "/bin/zsh",
+                    "args": ["-c"]
+                }
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true
