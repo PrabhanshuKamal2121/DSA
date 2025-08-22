@@ -241,20 +241,113 @@ using namespace std;
 // }
 
 
+/*
+A
+AB
+ABC
+ABCD
+ABCDE
 
-void pattern3(int n){
-    for(int i=1;i<=n;i++){
-        for(char ch='A';ch<='A'+i;ch++){
-            cout<<ch;
-        }
-    }
-}
+*/
+
+// void pattern3(int n){
+//     for(int i=1;i<=n;i++){
+//         for(char ch='A';ch<='A'+i-1;ch++){
+//             cout<<ch;
+//         }
+//         cout<<endl;
+//     }
+// }
+
+/*
+A
+BB
+CCC
+DDDD
+EEEEE
+*/
+// void pattern3(int n){
+//     char ch='A';
+//     for(int i=1;i<=n;i++){
+        
+//         for(int j=1;j<=i;j++){
+//             cout<<ch;
+//         }
+//         cout<<endl;
+//         ch++;
+
+//     }
+// }
+
+
+/*
+    A
+   ABA
+  ABCBA
+ ABCDCBA
+ABCDEDCBA
+
+*/
+// void pattern3(int n){
+//     char ch;
+//     for(int i=1;i<=n;i++){
+//         for(int j=1;j<=n-i;j++){
+//             cout<<' ';
+//         }
+//         for(char ch1 ='A';ch1<='A'+i-1-1;ch1++){
+//             cout<<ch1;
+//         }
+//         for(ch='A'+i-1;ch>='A';ch--){
+//             cout<<ch;
+//         }
+//         cout<<endl;
+//     }
+// }
+
+
+/*
+E
+ED
+EDC
+EDCB
+EDCBA
+*/
+// void pattern3(int n){
+//     for(int i=1;i<=n;i++){
+//         for(char ch='A'+n-1;ch>='A'+(n-i);ch--){
+//             cout<<ch;
+//         }
+//         cout<<endl;
+//     }
+// }
+
+/*
+*****
+*   *
+*   *
+*   *
+*****
+*/
+// void pattern3(int n){
+//     for(int i=1;i<=n;i++){
+//         for(int j=1;j<=n;j++){
+//             if(i==1 or i==n or j==1 or j==n){
+//                 cout<<'*';
+//             }
+//             else{
+//                 cout<<" ";
+//             }
+//         }
+//         cout<<endl;
+//     }
+// }
 
 
 
-int main(){
-    int n;
-    cin>>n;
-    pattern3(n);
-    return 0;
-}
+
+// int main(){
+//     int n;
+//     cin>>n;
+//     pattern3(n);
+//     return 0;
+// }
